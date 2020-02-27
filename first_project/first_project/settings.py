@@ -27,8 +27,8 @@ SECRET_KEY = 'i466d&$gyf#@ml26a+($o)j#t3d*mov+$0*j1r0l5gqmv&kixa'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']]
-X_FRAME_OPTIONS = "allow-from https://educative.io"
+#ALLOWED_HOSTS = [os.environ['ALLOWED_HOSTS']]
+#X_FRAME_OPTIONS = "allow-from https://educative.io"
 
 
 # Application definition
