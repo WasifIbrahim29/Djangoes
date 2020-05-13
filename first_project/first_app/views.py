@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from django.contrib.auth.models import User
 
-from .forms import TestForm
+from .forms import TestForm, PostModelForm
 
 # Create your views here.
 
@@ -17,7 +17,7 @@ def educative(request):
     return HttpResponse("Welcome to Educative page!")
 
 def forms(request):
-    form = TestForm( request.POST or None)
+    form = PostModelForm( request.POST or None)
     data = "None"
     text= "None"
     if form.is_valid():
