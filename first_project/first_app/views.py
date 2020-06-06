@@ -8,6 +8,8 @@ from .forms import TestForm, PostModelForm
 
 
 def index(request):
+    user = User.objects.create_user(username="Ulrich",email="ulrich@gmail.com",password="mac12")
+    user.save()
     return render(request,'first_app/index.html')
 
 def home(request):
